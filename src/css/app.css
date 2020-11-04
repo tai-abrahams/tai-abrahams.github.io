@@ -1,0 +1,14 @@
+body{
+    background-color: #9a8ea7;
+    margin:0px;
+    }
+
+
+.App{
+    font-family: Helvetica, sans-serif, arial;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    flex:1;
+}

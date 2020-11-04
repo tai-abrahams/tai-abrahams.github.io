@@ -1,0 +1,47 @@
+.navbar{
+    display:flex;
+    flex:1;
+    flex-basis: 100%;
+    justify-content: right;;
+}
+
+.navbar__container{
+    display:flex;
+    flex:1;
+    flex-basis:100%;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    margin-left:auto;
+    justify-content: right;
+}
+
+.navbar__brand{
+    display:flex;
+    flex: content;
+}
+
+.navbar__brand img{
+    object-fit: contain;
+    height: auto;
+    text-align: right;
+}
+
+.navbar__navLinks{
+    display: flex;
+    flex:0.7;
+    border: 1px solid green;
+    justify-content: right;
+    float:right;
+    text-align: right;
+}
+
+.navbar__navLinks div{
+    margin-left:auto !important;
+    display:flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex:0.7;
+    flex-basis:100%;
+    text-align: right;
+}
