@@ -11,7 +11,7 @@ image, path
     return (
         <div  className="portfolioCol__container">
             {console.log(image)}
-            <Link to={`/portfolio/${path}`} target="_blank"> <div className="portfolioCol__img" style={{backgroundImage:`url(${image})`}}></div></Link>    
+            <Link to={`/${path}`} target="_blank" onClick={ (e) => { e.preventDefault(); window.open(this.makeHref(`${path}`))}} > <div className="portfolioCol__img" style={{backgroundImage:`url(${image})`}}></div></Link>    
         </div>
     )
 }
