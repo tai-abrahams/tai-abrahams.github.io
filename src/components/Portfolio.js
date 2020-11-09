@@ -8,7 +8,7 @@ import TheMMImage from '../img/TheMM-thumbnail.png';
 // import CrownGroup from './CrownGroup/CrownGroup'
 //import TheMM from './MediaMasons/TheMM'
 
-const images = [
+const items = [
     {
         id:1,
         img: NCCImage,
@@ -28,8 +28,8 @@ const Portfolio = () => {
     return (
         <div className="portfolio__container">
             {
-                images.map((image)=>(
-                        <PortfolioImg image={image.img} path={image.path} key={image.id.toString()} />   
+                items.map((item)=>(
+                        <PortfolioImg image={item.img} path={item.path} key={item.id.toString()} />   
                 ))
             }
         </div>
