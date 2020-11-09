@@ -25,28 +25,13 @@ const routes = [{
     Component: Portfolio,
     name: "portfolio",
     exact: true
-}, /*{
-    path:'/portfolio/the-media-masons',
-    Component: TheMediaMasons,
-    name: 'The Media Masons',
-    exact: true
-}, {
-    path: '/portfolio/crown-group',
-    Component: CrownGroup,
-    name: 'Crown Group',
-    exact: true
-}, */ {
+}, 
+{
     path: '/contact',
     Component: Contact,
     name: "contact",
     exact: true
-},
-/*{
-    path: '/sites/NCC',
-    component: NCC,
-    name: 'New Covenant Church',
-    exact: true
-} */
+}
 ]
 
 const App = () => {
