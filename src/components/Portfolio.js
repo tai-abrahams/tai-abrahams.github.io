@@ -21,6 +21,7 @@ const items = [
     }, {
         id: 3,
         img: TheMMImage,
+        path: 'the-media-masons'
         //Component: TheMM
     }
 ]

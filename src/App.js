@@ -25,12 +25,6 @@ const routes = [{
     Component: Portfolio,
     name: "portfolio",
     exact: true
-}, 
-{
-    path: '/contact',
-    Component: Contact,
-    name: "contact",
-    exact: true
 }
 ]
 
@@ -46,7 +40,7 @@ const App = () => {
                 ))} */}
                 <div className="App">
                 <NavBar routes={routes} />
-                <Container className='container'>
+                <Container className='mt-0'>
                    { routes.map(({path, Component}) => (
                            <Route key={path} exact path={path}>
                                {({match})=>(

@@ -13,8 +13,8 @@ const NavBar = ({ routes }) => {
  
 
     return(
-        <div className="navbar__container">
-           <Navbar className="navbar">
+        <div className="w-100 p-0">
+           <Navbar className="">
                     <Navbar.Brand className="navbar__brand" >
                         <img src={logo} />
                     </Navbar.Brand>
