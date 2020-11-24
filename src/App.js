@@ -23,7 +23,11 @@ const routes = [{
     Component: Portfolio,
     name: "portfolio",
     exact: true
-}
+}/*, {
+    path:'https://github.com/tai-abrahams',
+    name: "github",
+    exact: true
+} */
 ]
 
 const App = () => {

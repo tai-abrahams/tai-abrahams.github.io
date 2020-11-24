@@ -12,15 +12,18 @@ const items = [
     {
         id:1,
         img: NCCImage,
-        path: 'new-covenant-church' 
+        path: 'new-covenant-church',
+        name: 'new covenant church'  
     }, {
         id:2,
         img: TravelLogIMG,
-        path: 'travel-log'
+        path: 'travel-log',
+        name: 'travel log'
     }, {
         id: 3,
         img: TheMMImage,
-        path: 'themediamasons'
+        path: 'themediamasons',
+        name: 'the media masons'
     } /*{
         id: 4,
         img: ShoppingList,
@@ -37,7 +40,7 @@ const Portfolio = () => {
         <div className="d-flex flex-column flex-sm-row flex-wrap justify-content-center">
             {
                 items.map((item)=>(
-                        <PortfolioImg image={item.img} path={item.path} key={item.id.toString()} />   
+                        <PortfolioImg image={item.img} path={item.path} name={item.name} key={item.id.toString()} />   
                 ))
             }
         </div>

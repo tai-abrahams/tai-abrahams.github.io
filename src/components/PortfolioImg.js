@@ -1,14 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import "../css/portfolioCol.css"
+
 const PortfolioImg = ({
-image, path
+image, path, name
 }) => {
 
 
     return (
-        <div  className="d-flex align-items-center mt-0 mb-5 mr-2 border border-warning">
-            <Link to={path}> <div className="portfolioCol__img" style={{backgroundImage:`url(${image})`}}></div></Link>    
+        <div  className="d-flex justify-content-center align-items-center mt-0 mb-5 mr-2">
+            <Link to={path} className="align-items-center justify-content-center text-center p-0 m-0">
+                <div className="img mb-2" style={{backgroundImage:`url(${image})`}}></div>
+                <button className="active alert-link-light mr-auto pt-1 text-white border rounded-lg border-dark bg-dark">{name}</button>
+            </Link>    
         </div> 
     )
 }
