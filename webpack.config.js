@@ -1,7 +1,6 @@
 const { fs } = require('fs');
 const path = require('path');
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
  module.exports = {
     // define entry file and output
@@ -14,9 +13,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
     devServer: {
         port: 3002,
         open: "Google Chrome",
-        historyApiFallback: true,
-        publicPath: '/dist/',
-        hot: true,
+        historyApiFallback: true
       },
     // define babel loader
     module: {
@@ -42,7 +39,4 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
         ],
       
    },
-   plugins: [
-       new CleanWebpackPlugin()
-   ],
 };
