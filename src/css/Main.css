@@ -41,3 +41,5 @@
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
 }
+
+/*still need media query for text sized// add id so we can effect the elements via #main */ 

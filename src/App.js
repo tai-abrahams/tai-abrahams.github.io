@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
 import Main from './components/Main';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
 import NavBar from './components/NavBar';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router Route } from 'react-router-dom';
 import { CSSTransition} from 'react-transition-group';
-import { Container, Navbar, Nav} from 'react-bootstrap';
-import logo from './img/tai-emblem.png';
-import "./css/Navbar.css";
+import { Container} from 'react-bootstrap';
+
+
 
 import "./css/app.css";
 import "./css/pages.css";
@@ -33,11 +31,6 @@ const App = () => {
     return(
         <div>
             <Router>
-                {/* {   siteRoutes.map(({path, Component}) => (
-                <Route key={path} path={path}>
-                <Component />
-                </Route>
-                ))} */}
                 <div className="App">
                 <NavBar routes={routes} />
                 <Container className='mt-0'>

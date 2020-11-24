@@ -1,9 +1,5 @@
 import React from 'react';
 import { Container, Navbar, Nav} from 'react-bootstrap';
-import "../css/Navbar.css";
-import Main from './Main'
-import Portfolio from './Portfolio'
-import Contact from './Contact'
 import logo from '../img/tai-emblem.png';
 import { NavLink} from 'react-router-dom'
 
@@ -15,7 +11,7 @@ const NavBar = ({ routes }) => {
     return(
         <div className="w-100 p-0">
            <Navbar className="">
-                    <Navbar.Brand className="navbar__brand" >
+                    <Navbar.Brand>
                         <img src={logo} />
                     </Navbar.Brand>
                     <Nav className="ml-auto">
