@@ -15,20 +15,13 @@ const routes = [{
     path: '/',
     Component: Main,
     name: "home",
-    exact: true,
-    target: "_self"
+    exact: true
 },
 {
     path: '/portfolio',
     Component: Portfolio,
     name: "portfolio",
-    exact: true,
-    target: "_self"
-}, {
-    path:'https://github.com/tai-abrahams',
-    name: "github",
-    exact: true,
-    target: "_blank"
+    exact: true
 }
 ]
 

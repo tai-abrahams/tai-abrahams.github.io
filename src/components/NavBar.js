@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Navbar, Nav} from 'react-bootstrap';
 import logo from '../img/tai-emblem.png';
-import { NavLink} from 'react-router-dom'
+import { NavLink} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,6 +21,7 @@ const NavBar = ({ routes }) => {
                     <Nav className="ml-auto">
                         {routes.map( route => (
                             <Nav.Link
+                                className={"text-dark"}
                                 key={route.path}
                                 as={NavLink}
                                 target={route.target}
@@ -31,6 +33,7 @@ const NavBar = ({ routes }) => {
                             </Nav.Link>
                             ))}
                     </Nav>
+                            <a className="text-dark btn border-0" href="https://www.github.com/tai-abrahams" target="_blank" style={{textDecoration: 'none !important', outline: 'none !important' }}>github</a>
             </Navbar>
         </div>
     )
