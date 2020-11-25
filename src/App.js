@@ -7,7 +7,6 @@ import { CSSTransition} from 'react-transition-group';
 import { Container} from 'react-bootstrap';
 
 
-
 import "./css/app.css";
 import "./css/pages.css";
 
@@ -16,19 +15,23 @@ const routes = [{
     path: '/',
     Component: Main,
     name: "home",
-    exact: true
+    exact: true,
+    target: "_self"
 },
 {
     path: '/portfolio',
     Component: Portfolio,
     name: "portfolio",
-    exact: true
-}/*, {
+    exact: true,
+    target: "_self"
+}, {
     path:'https://github.com/tai-abrahams',
     name: "github",
-    exact: true
-} */
+    exact: true,
+    target: "_blank"
+}
 ]
+
 
 const App = () => {
 

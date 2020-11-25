@@ -7,6 +7,9 @@ import { NavLink} from 'react-router-dom'
 
 const NavBar = ({ routes }) => {
  
+    const externalLink = (route)=>{
+        window.open(`${route}`);
+    }
 
     return(
         <div className="w-100 p-0">
@@ -19,6 +22,7 @@ const NavBar = ({ routes }) => {
                             <Nav.Link
                                 key={route.path}
                                 as={NavLink}
+                                target={route.target}
                                 to={route.path}
                                 activeClassName="active"
                                 exact

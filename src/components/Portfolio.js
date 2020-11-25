@@ -1,6 +1,6 @@
 import React from 'react'
 import PortfolioImg from './PortfolioImg'
-
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import NCCImage from '../img/NCC-thumbnail.png'
 import TravelLogIMG from '../img/travel-log-thumbnail.png'
@@ -8,7 +8,7 @@ import TheMMImage from '../img/TheMM-thumbnail.png';
 //import ShoppingList from '../img/shoppingList'
 
 
-const items = [
+const routes = [
     {
         id:1,
         img: NCCImage,
@@ -38,11 +38,14 @@ const items = [
 const Portfolio = () => {
     return (
         <div className="d-flex flex-column flex-sm-row flex-wrap justify-content-center">
-            {
-                items.map((item)=>(
-                        <PortfolioImg image={item.img} path={item.path} name={item.name} key={item.id.toString()} />   
-                ))
-            }
+            
+                {
+                    routes.map(({id, img, path, name})=>(
+                            <PortfolioImg image={img} path={path} name={name} key={id.toString()} />
+                           
+                    ))
+                }
+
         </div>
     )
 }
