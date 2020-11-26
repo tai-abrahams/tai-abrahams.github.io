@@ -2,7 +2,7 @@ import React from 'react';
 import Main from './components/Main';
 import Portfolio from './components/Portfolio';
 import NavBar from './components/NavBar';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { CSSTransition} from 'react-transition-group';
 import { Container} from 'react-bootstrap';
 
@@ -35,6 +35,7 @@ const App = () => {
                 <NavBar routes={routes} />
                 <Container className='mt-0'>
                    { routes.map(({path, Component}) => (
+                       <Switch>
                            <Route key={path} exact path={path}>
                                {({match})=>(
                                    <CSSTransition
@@ -49,6 +50,7 @@ const App = () => {
                                    </CSSTransition>
                                )}
                            </Route>
+                        </Switch>
                    ))}
                 </Container>
                 </div>
