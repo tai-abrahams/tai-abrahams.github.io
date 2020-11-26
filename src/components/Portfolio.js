@@ -43,8 +43,8 @@ const Portfolio = () => {
         <div className="d-flex flex-column flex-sm-row flex-wrap justify-content-center">
             
                 {
-                    routes.map(({id, img, path, name})=>(
-                            <PortfolioImg image={img} path={path} name={name} key={id.toString()} />
+                    routes.map(({id, img, path, name, target})=>(
+                            <PortfolioImg image={img} path={path} name={name} target={target} key={id.toString()} />
                            
                     ))
                 }
