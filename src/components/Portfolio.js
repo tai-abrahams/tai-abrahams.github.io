@@ -13,17 +13,20 @@ const routes = [
         id:1,
         img: NCCImage,
         path: 'new-covenant-church',
-        name: 'new covenant church'  
+        name: 'new covenant church',
+        target: "_blank"  
     }, {
         id:2,
         img: TravelLogIMG,
         path: 'travel-log',
-        name: 'travel log'
+        name: 'travel log',
+        target: "_blank"  
     }, {
         id: 3,
         img: TheMMImage,
         path: 'themediamasons',
-        name: 'the media masons'
+        name: 'the media masons',
+        target: "_blank"  
     } /*{
         id: 4,
         img: ShoppingList,
