@@ -31,9 +31,9 @@ const App = () => {
     return(
         <div>
             <Router>
-                <div className="App">
+                <div className="App col-12 m-0 p-0">
                 <NavBar routes={routes} />
-                <Container className='mt-0'>
+                <Container className='col-12 m-0 p-0'>
                    { routes.map(({path, Component}) => (
                        <Switch>
                            <Route key={path} exact path={path}>

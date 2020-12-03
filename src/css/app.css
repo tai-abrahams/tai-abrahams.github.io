@@ -6,9 +6,4 @@ body{
 
 .App{
     font-family: Helvetica, sans-serif, arial;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    flex:1;
 }

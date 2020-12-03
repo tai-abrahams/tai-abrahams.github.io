@@ -13,8 +13,8 @@ const NavBar = ({ routes }) => {
     }
 
     return(
-        <div className="w-100 p-0">
-           <Navbar className="">
+        <div className="row col-12 ml-0 mr-0 h-25 p-0">
+           <Navbar className="col-10 mr-auto ml-auto">
                     <Navbar.Brand>
                         <img src={logo} />
                     </Navbar.Brand>
